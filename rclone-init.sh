@@ -5,7 +5,7 @@
 # GitHub: https://github.com/Denjamins/rclone-init 
 
 # Current version of the script
-current_version="1.03"
+current_version="1.04"
 
 # Function to check the version
 check_version() {
@@ -72,8 +72,6 @@ if [ -e "$rclone_path" ]; then
         else
             echo "❌ Rclone not updated"
         fi
-    else
-        # echo "Rclone is up to date"
     fi
 else
     # If rclone is not found
