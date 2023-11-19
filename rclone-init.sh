@@ -5,7 +5,7 @@
 # GitHub: https://github.com/Denjamins/rclone-init 
 
 # Current version of the script
-current_version="1.00"
+current_version="1.01"
 
 # Function to check the version
 check_version() {
