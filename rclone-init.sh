@@ -52,7 +52,7 @@ echo ""
 if [ -e "$rclone_path" ]; then
     # If Rclone exists
     alias rclone="$rclone_path"
-    echo -e "Rclone is running ('man-rclone' to read the manual)"
+    echo -e "Rclone $current_version is running, use 'man-rclone' for the manual"
     alias man-rclone='man ~/rclone/rclone.1'
         
     # Check Rclone versions
@@ -73,7 +73,7 @@ if [ -e "$rclone_path" ]; then
             echo "❌ Rclone not updated"
         fi
     else
-        echo "Rclone is up to date"
+        # echo "Rclone is up to date"
     fi
 else
     # If rclone is not found
