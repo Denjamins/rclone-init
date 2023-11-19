@@ -1,11 +1,11 @@
-## Rclone Init
+# Rclone Init
 
 **rclone-init** is a Bash script created by Denis Surkov to simplify the management of the Rclone tool on your system. Rclone is a powerful command-line program to manage files on cloud storage. This script automates the installation and updating process for Rclone.
 
-### Version
+## Version
 Current version: 1.00
 
-### Features
+## Features
 
 - **Version Checking**: The script checks the version of Rclone installed on your system and compares it with the latest version available on GitHub.
 
@@ -35,11 +35,11 @@ Current version: 1.00
 
 - If Rclone is already installed, it compares the installed version with the latest version available and prompts you to update if necessary.
 
-### Getting Started
+## Getting Started
 
 Visit the [GitHub repository](https://github.com/Denjamins/rclone-init) for more details and to contribute to the project.
 
-### Author
+## Author
 
 - Denis Surkov
 - GitHub: [Denjamins](https://github.com/Denjamins)
