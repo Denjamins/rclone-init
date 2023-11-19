@@ -9,13 +9,13 @@ current_version="1.00"
 
 # Function to check the version
 check_version() {
-    remote_version=$(curl -s "https://raw.githubusercontent.com/Denjamins/wp-cli-init/main/rclone-init.sh?$(date +%s)" | grep -oP '^current_version="\K[^"]+')
+    remote_version=$(curl -s "https://raw.githubusercontent.com/Denjamins/rclone-init/main/rclone-init.sh?$(date +%s)" | grep -oP '^current_version="\K[^"]+')
     
     if [[ "$current_version" != "$remote_version" ]]; then
         echo -e "\nWP-CLI-Init $remote_version is available."
         read -p "Would you like to update? (Y/N): " choice
         if [[ "$choice" == "Y" || "$choice" == "y" ]]; then
-            wget -O wp-cli-init.sh "https://raw.githubusercontent.com/Denjamins/wp-cli-init/main/rclone-init.sh?$(date +%s)"
+            wget -O wp-cli-init.sh "https://raw.githubusercontent.com/Denjamins/rclone-init/main/rclone-init.sh?$(date +%s)"
             echo "WP-CLI-Init updated to $remote_version."
         else
             echo "Update canceled."
