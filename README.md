@@ -26,6 +26,8 @@
 
 ### How it works
 
+- Use the `--ver` parameter to check the version of the script, e.g., `rclone-init.sh --ver`.
+
 - The script fetches the latest version of itself from the GitHub repository to ensure it is up to date.
 
 - It then checks for the presence of Rclone on your system. If not found, it provides an option to install it.
