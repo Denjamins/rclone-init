@@ -5,7 +5,7 @@
 # GitHub: https://github.com/Denjamins/rclone-init 
 
 # Current version of the script
-current_version="1.04"
+current_version="1.05"
 
 # Function to check the version
 check_version() {
@@ -25,6 +25,17 @@ check_version() {
 
 # Check the version when the script is executed
 check_version
+
+# Function to display version
+display_version() {
+    echo "Rclone Init $current_version"
+}
+
+# Check if the script should display the version
+if [ "$1" == "--ver" ]; then
+    display_version
+    exit 0
+fi
 
 # Vars
 rclone_dir=~/rclone
