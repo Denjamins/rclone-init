@@ -13,7 +13,7 @@
 ## Installation:
 1. Download to the user home directory with:
    ```bash
-   wget -O rclone-init.sh https://raw.githubusercontent.com/Denjamins/wp-cli-init/main/rclone-init.sh
+   wget -O rclone-init.sh https://raw.githubusercontent.com/Denjamins/rclone-init/main/rclone-init.sh
    ```
 2. Add `source ~/rclone-init.sh` to your `.bashrc`:
    ```bash
